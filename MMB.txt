@@ -1,0 +1,55 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "RockFruit×Gay", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "HackByVinhQuang",
+	Content = "Rock Fruit",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab1 = Window:MakeTab({
+	Name = "Auto Reddem Code",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab1:AddSection({
+	Name = "Reddem Code"
+})
+
+Tab1:AddButton({
+	Name = "King",
+	Callback = function(z)
+local args = {
+    [1] = "RedeemCode",
+    [2] = "King"
+}
+
+game:GetService("ReplicatedStorage").Remotes.System:FireServer(unpack(args))
+end
+})
+
+Tab1:AddButton({
+	Name = "Shadow",
+	Callback = function(z)
+local args = {
+    [1] = "RedeemCode",
+    [2] = "Shadow"
+}
+
+game:GetService("ReplicatedStorage").Remotes.System:FireServer(unpack(args))
+end
+})
+
+Tab1:AddButton({
+	Name = "FREECODE5",
+	Callback = function(z)
+local args = {
+    [1] = "RedeemCode",
+    [2] = "FREECODE5"
+}
+
+game:GetService("ReplicatedStorage").Remotes.System:FireServer(unpack(args))
+end
+})
